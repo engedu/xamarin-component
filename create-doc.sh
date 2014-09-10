@@ -11,7 +11,7 @@ rm -rf msxdoc
 MDOC=/usr/local/bin/mdoc.exe
 
 # The path to the OxyPlot output files (dll/xml)
-OUTPUT=../../oxyplot/Output
+OUTPUT=../bin
 
 # Define the directories for the MonoTouch.dll and Mono.Android.dll assemblies.
 # These are needed to generate documentation for OxyPlot.XamarinIOS and OxyPlot.XamarinAndroid@
@@ -25,9 +25,9 @@ echo "Update doc xml files"
 mono $MDOC update -o doc \
 	-L $MONOTOUCHDIR \
 	-L $MONOANDROIDDIR \
-	-i $OUTPUT/PCL/OxyPlot.xml $OUTPUT/PCL/OxyPlot.dll \
-	-i $OUTPUT/XamarinIOS/OxyPlot.XamarinIOS.xml $OUTPUT/XamarinIOS/OxyPlot.XamarinIOS.dll \
-	-i $OUTPUT/XamarinAndroid/OxyPlot.XamarinAndroid.xml $OUTPUT/XamarinAndroid/OxyPlot.XamarinAndroid.dll \
+	-i $OUTPUT/OxyPlot.xml $OUTPUT/OxyPlot.dll \
+	-i $OUTPUT/OxyPlot.XamarinIOS.xml $OUTPUT/OxyPlot.XamarinIOS.dll \
+	-i $OUTPUT/OxyPlot.XamarinAndroid.xml $OUTPUT/OxyPlot.XamarinAndroid.dll \
 	> doc-update.log
 if [ $? -ne 0 ]; then 
 	echo "  FAILED!"

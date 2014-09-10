@@ -5,7 +5,7 @@ MDTOOL="/Applications/Xamarin Studio.app/Contents/MacOS/mdtool"
 VERSION=2014.1
 
 SAMPLES=OxyPlot-$VERSION/samples
-cd ../Output
+cd out
 unzip -o *.xam
 
 # Build samples
@@ -37,3 +37,5 @@ if [ $? -ne 0 ]; then
 else 
 	echo "Android/Release: OK"
 fi
+
+cd ..

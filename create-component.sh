@@ -3,8 +3,9 @@
 cd src
 
 # Folders
-OUTPUT=../../oxyplot/Output
 ICONS=../../oxyplot/Icons
+BIN=../bin
+OUTPUT=../out
 
 echo Removing old files
 rm -v bin/*
@@ -15,9 +16,10 @@ echo "Copying binaries"
 if [ ! -d "bin" ]; then
   mkdir bin
 fi
-cp -v $OUTPUT/PCL/OxyPlot.dll bin
-cp -v $OUTPUT/XamarinIOS/OxyPlot.XamarinIOS.dll bin
-cp -v $OUTPUT/XamarinAndroid/OxyPlot.XamarinAndroid.dll bin
+
+cp -v $BIN/OxyPlot.dll bin
+cp -v $BIN/OxyPlot.XamarinIOS.dll bin
+cp -v $BIN/OxyPlot.XamarinAndroid.dll bin
 
 echo "Copying icons"
 if [ ! -d "icons" ]; then
@@ -27,9 +29,13 @@ cp -v $ICONS/OxyPlot_128.png icons/OxyPlot_128x128.png
 cp -v $ICONS/OxyPlot_256.png icons/OxyPlot_256x256.png
 cp -v $ICONS/OxyPlot_512.png icons/OxyPlot_512x512.png
 
-VERSION=${VERSION:=2014.1.0}
+VERSION=${VERSION:=2014.1}
 
 OUTPUTPACKAGE=$OUTPUT/OxyPlot-$VERSION.xam
+
+if [ ! -d "$OUTPUT" ]; then
+  mkdir -v $OUTPUT
+fi
 
 echo "Creating Xamarin Component: $OUTPUTPACKAGE"
 mono /usr/local/bin/xamarin-component.exe create-manually "$OUTPUTPACKAGE" \
@@ -56,4 +62,4 @@ mono /usr/local/bin/xamarin-component.exe create-manually "$OUTPUTPACKAGE" \
 
 ls -al $OUTPUT/OxyPlot*.xam
 
-cd ../../Build
+cd ..
