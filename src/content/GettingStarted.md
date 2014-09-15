@@ -79,7 +79,7 @@ protected override void OnCreate (Bundle bundle)
 	plotView.Model = CreatePlotModel();
     
 	this.AddContentView (plotView,
-		new ViewGroup.LayoutParams (ViewGroup.LayoutParams.FillParent, ViewGroup.LayoutParams.FillParent));
+		new ViewGroup.LayoutParams (ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent));
 }
 ```
 

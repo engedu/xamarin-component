@@ -24,8 +24,8 @@ namespace OxyPlotSample.Android
 			this.AddContentView (
 				plotView, 
 				new ViewGroup.LayoutParams (
-					ViewGroup.LayoutParams.FillParent, 
-					ViewGroup.LayoutParams.FillParent));
+					ViewGroup.LayoutParams.MatchParent, 
+					ViewGroup.LayoutParams.MatchParent));
 		}
 	}
 }
