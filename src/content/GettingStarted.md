@@ -49,7 +49,7 @@ public override void ViewDidLoad ()
 {
 	...
 	var plotView = new PlotView {
-		Model = CreatePlotModel();
+		Model = CreatePlotModel(),
 		Frame = this.View.Frame 
 	};
 	this.View.AddSubview (plotView);
