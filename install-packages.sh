@@ -11,8 +11,8 @@ rm -rf out
 rm -rf bin
 
 # Get the latest packages
-nuget install OxyPlot.XamarinIOS -o packages
-nuget install OxyPlot.XamarinAndroid -o packages
+nuget install OxyPlot.Xamarin.iOS -o packages
+nuget install OxyPlot.Xamarin.Android -o packages
 
 # Copy all assemblies to a bin folder
 if [ ! -d "bin" ]; then

@@ -1,0 +1,35 @@
+%YAML 1.2
+---
+
+id: oxyplot
+name: OxyPlot
+version: 2015.1.728
+summary: A cross-platform plotting library for .NET
+
+publisher: OxyPlot.org
+publisher-url: http://oxyplot.org
+src-url: https://github.com/oxyplot/oxyplot
+
+details: content/Details.md
+license: content/License.md
+getting-started: content/GettingStarted.md
+
+samples: 
+  - name: "iOS Unified Sample"
+    path: samples/OxyPlotSample.iOS.sln
+  - name: "Android Sample"
+    path: samples/OxyPlotSample.Android.sln
+  - name: "Windows Phone Sample"
+    path: samples/OxyPlotSample.WindowsPhone.sln
+
+is_shell: true
+packages:
+  mobile: oxyplot.mobile, Version=2015.1.728-alpha
+
+icons: 
+  - ../out/icons/OxyPlot_128x128.png
+  - ../out/icons/OxyPlot_512x512.png
+
+popover: content/Popover.png
+screenshots:
+  - content/Screenshot.png
