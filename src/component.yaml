@@ -24,7 +24,9 @@ samples:
 
 is_shell: true
 packages:
-  mobile: oxyplot.mobile, Version=2015.1.728-alpha
+  mobile:
+    - OxyPlot.Core, Version=2015.1.728-alpha
+    - OxyPlot.Mobile, Version=2015.1.728-alpha
 
 icons: 
   - ../out/icons/OxyPlot_128x128.png
