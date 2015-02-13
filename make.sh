@@ -1,14 +1,14 @@
 #!/bin/bash
 
-VERSION=${1-2014.1}
+VERSION=2015.1.728-alpha
 
 echo Creating OxyPlot Xamarin component version $VERSION
 
 # Install the latest OxyPlot.Xamarin NuGet packages
-. install-packages.sh
+. install-packages.sh $VERSION
 
 # Create documentation
-. create-doc.sh
+. create-doc.sh $VERSION
 
 # Create the component
-. create-component.sh
+. create-component.sh $VERSION

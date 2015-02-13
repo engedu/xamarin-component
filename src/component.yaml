@@ -3,7 +3,7 @@
 
 id: oxyplot
 name: OxyPlot
-version: 2015.1.728
+version: COMPONENT_VERSION
 summary: A cross-platform plotting library for .NET
 
 publisher: OxyPlot.org
@@ -25,12 +25,12 @@ samples:
 is_shell: true
 packages:
   mobile:
-    - OxyPlot.Core, Version=2015.1.728-alpha
-    - OxyPlot.Mobile, Version=2015.1.728-alpha
+    - OxyPlot.Core, Version=NUGET_VERSION
+    - OxyPlot.Mobile, Version=NUGET_VERSION
 
-icons: 
-  - ../out/icons/OxyPlot_128x128.png
-  - ../out/icons/OxyPlot_512x512.png
+icons:
+  - icons/OxyPlot_128x128.png
+  - icons/OxyPlot_512x512.png
 
 popover: content/Popover.png
 screenshots:
