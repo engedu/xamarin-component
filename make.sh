@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION=2015.1.728-alpha
+VERSION=2015.1.738-alpha
 
 echo Creating OxyPlot Xamarin component version $VERSION
 

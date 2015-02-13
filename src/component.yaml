@@ -24,7 +24,19 @@ samples:
 
 is_shell: true
 packages:
-  mobile:
+  android:
+    - OxyPlot.Core, Version=NUGET_VERSION
+    - OxyPlot.Mobile, Version=NUGET_VERSION
+  ios:
+    - OxyPlot.Core, Version=NUGET_VERSION
+    - OxyPlot.Mobile, Version=NUGET_VERSION
+  ios-unified:
+    - OxyPlot.Core, Version=NUGET_VERSION
+    - OxyPlot.Mobile, Version=NUGET_VERSION
+  winphone-8.1:
+    - OxyPlot.Core, Version=NUGET_VERSION
+    - OxyPlot.Mobile, Version=NUGET_VERSION
+  winphone-8.0:
     - OxyPlot.Core, Version=NUGET_VERSION
     - OxyPlot.Mobile, Version=NUGET_VERSION
 
