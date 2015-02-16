@@ -54,12 +54,3 @@ plotModel.Series.Add (series1);
 Then add a `PlotView` in your iOS or Android app, and assign the `Model` property of the view 
 to the `PlotModel` you just created. See the getting started section for more information.
 The Xamarin Component includes sample solutions for both Android and iOS. 
-
-# Compatibility
-
-OxyPlot is tested on
-- iPhone Retina iOS 7.1
-- iPad iOS 7.1
-- iPad Retina iOS 7.1
-- iPad Retina (64-bit) iOS 7.1
-- Android

@@ -151,10 +151,10 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="OxyPlot">
-      <HintPath>..\packages\OxyPlot.Core.2015.1.728-alpha\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+      <HintPath>..\packages\OxyPlot.Core.2015.1.744-alpha\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
     </Reference>
     <Reference Include="OxyPlot.WP8">
-      <HintPath>..\packages\OxyPlot.Mobile.2015.1.728-alpha\lib\windowsphone8\OxyPlot.WP8.dll</HintPath>
+      <HintPath>..\packages\OxyPlot.Mobile.2015.1.744-alpha\lib\windowsphone8\OxyPlot.WP8.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />

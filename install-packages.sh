@@ -14,6 +14,11 @@ rm -rf bin
 nuget install OxyPlot.Core -o packages -Version $1
 nuget install OxyPlot.Mobile -o packages -Version $1
 
+# restore the sample nugets
+nuget restore src/samples/OxyPlotSample.Android.sln
+nuget restore src/samples/OxyPlotSample.iOS.sln
+nuget restore src/samples/OxyPlotSample.WindowsPhone.sln
+
 # Copy all assemblies to a bin folder
 if [ ! -d "bin" ]; then
   mkdir bin
