@@ -4,7 +4,7 @@ using Android.OS;
 
 namespace OxyPlotSample.Android
 {
-	using OxyPlot.XamarinAndroid;
+	using OxyPlot.Xamarin.Android;
 
 	[Activity (Label = "OxyPlotSample.Android", MainLauncher = true)]
 	public class MainActivity : Activity

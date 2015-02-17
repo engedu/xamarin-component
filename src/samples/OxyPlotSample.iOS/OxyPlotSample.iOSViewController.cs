@@ -1,11 +1,11 @@
-﻿namespace OxyPlotSample.iOS
+namespace OxyPlotSample.iOS
 {
 	using System;
-	using System.Drawing;
+	using CoreGraphics;
 
-	using MonoTouch.UIKit;
+	using UIKit;
 
-	using OxyPlot.XamarinIOS;
+	using OxyPlot.Xamarin.iOS;
 	using OxyPlotSample;
 
 	/// <summary>
@@ -43,7 +43,7 @@
 			this.plotView.Model = myClass.MyModel;
 
 			// Set the frame and add the plot view to the view
-			this.plotView.Frame = new RectangleF (0, 20, this.View.Frame.Width, this.View.Frame.Height - 20);
+			this.plotView.Frame = new CGRect (0, 20, this.View.Frame.Width, this.View.Frame.Height - 20);
 			this.plotView.AutoresizingMask = UIViewAutoresizing.All;
 			this.View.AddSubview (this.plotView);
 		}
